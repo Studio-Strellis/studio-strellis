@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Studio Strellis — Web Design, Photography & Copywriting</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='12' fill='white'/><polygon points='32,10 56,54 8,54' fill='%230a0a0a'/></svg>" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -53,9 +54,12 @@
       color: var(--text);
       text-decoration: none;
       letter-spacing: 0.3px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
     }
 
-    .nav-logo span { color: var(--accent); }
+    .nav-logo span { color: var(--text); }
 
     .nav-links {
       display: flex;
@@ -468,6 +472,9 @@
     }
 
     .portfolio-card {
+      display: block;
+      text-decoration: none;
+      color: inherit;
       background: var(--bg-3);
       border: 1px solid var(--border);
       border-radius: 8px;
@@ -670,7 +677,7 @@
 
   <!-- NAV -->
   <nav>
-    <a href="#hero" class="nav-logo">Studio <span>Strellis</span></a>
+    <a href="#hero" class="nav-logo"><svg width="32" height="32" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0;border-radius:7px;"><rect width="64" height="64" rx="12" fill="white"/><polygon points="32,10 56,54 8,54" fill="#0a0a0a"/></svg><span style="color:var(--accent)">Studio</span> Strellis</a>
     <ul class="nav-links">
       <li><a href="#services">Services</a></li>
       <li><a href="#process">Process</a></li>
@@ -694,7 +701,7 @@
   <section id="hero">
     <div class="hero-bg-text">Studio</div>
     <div class="hero-content">
-      <h1 class="hero-title">Websites that<br />work as hard<br />as <em>you do.</em></h1>
+      <h1 class="hero-title">Websites that<br />work as hard<br />as <em>you.</em></h1>
       <p class="hero-sub">Studio Strellis builds beautiful, high-performance websites for local businesses — and handles everything after launch so you never have to think about it.</p>
       <div class="hero-actions">
         <a href="#contact" class="btn-primary">Start a Project</a>
@@ -801,12 +808,12 @@
       <div class="work-header">
         <div>
           <span class="label">Our Work</span>
-          <h2 class="h2">Built for the Trades.</h2>
+          <h2 class="h2">Built for the trades.</h2>
         </div>
       </div>
       <div class="portfolio-grid">
 
-<div class="portfolio-card">
+<a href="https://silverlakelockandkey.com" target="_blank" rel="noopener" class="portfolio-card">
           <div class="portfolio-thumb">
             <iframe src="../silver-lake-locksmith/index.html" title="Silver Lake Lock & Key" scrolling="no" tabindex="-1"></iframe>
           </div>
@@ -815,9 +822,9 @@
             <div class="portfolio-name">Silver Lake Lock & Key</div>
             <div class="portfolio-desc">Brand identity, full-site design & copywriting for a 25-year neighborhood locksmith.</div>
           </div>
-        </div>
+        </a>
 
-        <div class="portfolio-card">
+        <a href="https://lightning-bug-electrical.com" target="_blank" rel="noopener" class="portfolio-card">
           <div class="portfolio-thumb">
             <iframe src="../lightning-bug-electrical/index.html" title="Lightning Bug Electrical" scrolling="no" tabindex="-1"></iframe>
           </div>
@@ -826,18 +833,18 @@
             <div class="portfolio-name">Lightning Bug Electrical</div>
             <div class="portfolio-desc">Bold redesign for a residential electrician — built to convert on mobile.</div>
           </div>
-        </div>
+        </a>
 
-        <div class="portfolio-card">
+        <a href="https://garcia-plumbing.com" target="_blank" rel="noopener" class="portfolio-card">
           <div class="portfolio-thumb">
             <iframe src="../garcia-plumbing/index.html" title="Garcia & Sons Plumbing" scrolling="no" tabindex="-1"></iframe>
           </div>
           <div class="portfolio-info">
             <span class="portfolio-tag">Plumbing · Los Angeles</span>
-            <div class="portfolio-name">Garcia & Sons Plumbing</div>
+            <div class="portfolio-name">Garcia & Son Plumbing</div>
             <div class="portfolio-desc">Clean, light-mode site for a family-owned plumber with a 20-year local reputation.</div>
           </div>
-        </div>
+        </a>
 
       </div>
     </div>
