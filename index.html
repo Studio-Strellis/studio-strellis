@@ -447,6 +447,33 @@
       line-height: 1.6;
     }
 
+    /* ── ABOUT ── */
+    #about { background: var(--bg-2); }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+
+    .about-text .body-text { margin-top: 20px; }
+
+    .about-photo img {
+      width: 100%;
+      border-radius: 4px;
+      display: block;
+      filter: grayscale(15%);
+    }
+
+    @media (max-width: 768px) {
+      .about-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+      .about-photo { order: -1; }
+    }
+
     /* ── PORTFOLIO ── */
     #work { background: var(--bg-2); }
 
@@ -679,6 +706,7 @@
   <nav>
     <a href="#hero" class="nav-logo"><svg width="32" height="32" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0;border-radius:7px;"><rect width="64" height="64" rx="12" fill="white"/><polygon points="32,10 56,54 8,54" fill="#0a0a0a"/></svg><span style="color:var(--accent)">Studio</span> Strellis</a>
     <ul class="nav-links">
+      <li><a href="#about">About</a></li>
       <li><a href="#services">Services</a></li>
       <li><a href="#process">Process</a></li>
       <li><a href="#work">Work</a></li>
@@ -691,6 +719,7 @@
 
   <!-- MOBILE DRAWER -->
   <div class="mobile-drawer" id="mobileDrawer">
+    <a href="#about">About</a>
     <a href="#services">Services</a>
     <a href="#process">Process</a>
     <a href="#work">Work</a>
@@ -710,6 +739,22 @@
     </div>
     <div class="hero-scroll">
       <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-inner">
+      <div class="about-grid">
+        <div class="about-text">
+          <span class="label">About</span>
+          <h2 class="h2">Brandon builds websites that help small businesses <em>grow.</em></h2>
+          <p class="body-text">His background spans engineering to improv to wilderness. You'll meet him, and he'll look like this →</p>
+        </div>
+        <div class="about-photo">
+          <img src="brandon.jpg" alt="Brandon Strellis" />
+        </div>
+      </div>
     </div>
   </section>
 
