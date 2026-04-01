@@ -471,7 +471,7 @@
         grid-template-columns: 1fr;
         gap: 40px;
       }
-      .about-photo { order: -1; }
+      .about-photo { order: 1; }
     }
 
     /* ── PORTFOLIO ── */
@@ -545,12 +545,13 @@
     .portfolio-thumb iframe {
       position: absolute;
       top: 0;
-      left: 0;
+      left: 50%;
+      margin-left: -640px;
       width: 1280px;
       height: 960px;
       border: none;
       transform: scale(0.5);
-      transform-origin: top left;
+      transform-origin: top center;
       pointer-events: none;
     }
 
@@ -850,7 +851,7 @@
       <div class="work-header">
         <div>
           <span class="label">Our Work</span>
-          <h2 class="h2">Built for the trades.</h2>
+          <h2 class="h2">Custom websites for your unique business.</h2>
         </div>
       </div>
       <div class="portfolio-grid">
@@ -868,7 +869,7 @@
 
         <a href="https://lightning-bug-electrical.com" target="_blank" rel="noopener" class="portfolio-card">
           <div class="portfolio-thumb">
-            <iframe src="https://lightning-bug-electrical.com" title="Lightning Bug Electrical" scrolling="no" tabindex="-1"></iframe>
+            <iframe src="https://lightning-bug-electrical.com" title="Lightning Bug Electrical" scrolling="no" tabindex="-1" style="width:1920px;height:1440px;margin-left:-960px;transform:scale(0.333);"></iframe>
           </div>
           <div class="portfolio-info">
             <span class="portfolio-tag">Electrician · Los Angeles</span>
